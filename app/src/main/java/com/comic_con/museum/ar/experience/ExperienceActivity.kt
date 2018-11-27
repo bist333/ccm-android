@@ -40,7 +40,7 @@ class ExperienceActivity: AppCompatActivity() {
 
     // The unity player for the AR component
     val unityPlayer: UnityPlayer by lazy {
-        UnityPlayer(this)
+        UnityPlayer(applicationContext)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
