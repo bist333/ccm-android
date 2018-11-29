@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content_navigation"
+            app:startDestination="@id/content_overview">
+
+    <fragment
+        android:id="@+id/content_overview"
+        android:name="com.comic_con.museum.ar.experience.content.subfragments.ContentOverviewFragment"/>
+
+    <fragment
+        android:id="@+id/content_listings"
+        android:name="com.comic_con.museum.ar.experience.content.subfragments.ContentListingsFragment">
+
+        <argument
+            android:name="categoryId"
+            app:argType="string"
+            android:defaultValue="-1"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/content_single"
+        android:name="com.comic_con.museum.ar.experience.content.subfragments.ContentSingleFragment">
+
+        <argument
+            android:name="contentId"
+            app:argType="string"
+            android:defaultValue="-1"/>
+
+    </fragment>
+
+</navigation>
